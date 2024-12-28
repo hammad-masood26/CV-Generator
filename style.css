@@ -15,20 +15,16 @@ h1 {
 
 label {
     display: block;
-    font-size: 1rem;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input[type="text"], 
-input[type="email"] {
+input, textarea, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1rem;
 }
 
 button {
@@ -37,27 +33,52 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
 }
 
 button:hover {
     background-color: #2980b9;
 }
 
-div {
-    margin: 15px 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    background-color: #e8f0fe;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.design1 {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fdf6e4;
+    padding: 20px;
+    border: 1px solid #d3b585;
+    border-radius: 10px;
+    color: #5a5a5a;
+    margin-top: 20px;
 }
 
-#nameShow, #fatherNameShow, #emailShow, #skillsShow, #educationShow {
-    font-size: 1.2rem;
+.design2 {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0fe;
+    padding: 20px;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #34495e;
+    margin-top: 20px;
+}
+
+.design3 {
+    font-family: 'Georgia', serif;
+    background-color: #fafafa;
+    padding: 20px;
+    border: 2px solid #bdc3c7;
+    border-radius: 15px;
+    color: #2c3e50;
+    margin-top: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.design4 {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    color: #333;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

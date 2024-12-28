@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Generator</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,16 +17,37 @@
     <label for="">Email</label>
     <input type="email" id="email"><br><br>
     <label for="">Skills</label>
-    <input type="text" id="skills"><br><br>
+    <textarea id="skills" rows="3" placeholder="Enter skills separated by commas"></textarea><br><br>
     <label for="">Education</label>
-    <input type="text" id="education"><br><br>
-    <button onclick="generateCV()">Submit</button><br><br>
-    
-    <div id="nameShow"></div>
-    <div id="contactShow"></div>
-    <div id="emailShow"></div>
-    <div id="skillsShow"></div>
-    <div id="educationShow"></div>
+    <textarea id="education" rows="3" placeholder="Enter education details"></textarea><br><br>
+    <label for="">Work Experience</label>
+    <textarea id="experience" rows="3" placeholder="Enter work experience"></textarea><br><br>
+    <label for="">Hobbies</label>
+    <textarea id="hobbies" rows="3" placeholder="Enter hobbies"></textarea><br><br>
+    <label for="">References</label>
+    <textarea id="references" rows="3" placeholder="Enter references"></textarea><br><br>
+
+    <label for="design">Choose Design:</label>
+    <select id="design">
+        <option value="design1">Classic</option>
+        <option value="design2">Modern</option>
+        <option value="design3">Elegant</option>
+        <option value="design4">Professional</option>
+    </select><br><br>
+
+    <button onclick="generateCV()">Generate CV</button>
+
+    <div id="cvContainer" class="design1">
+        <div id="nameShow"></div>
+        <div id="contactShow"></div>
+        <div id="emailShow"></div>
+        <div id="skillsShow"></div>
+        <div id="educationShow"></div>
+        <div id="experienceShow"></div>
+        <div id="hobbiesShow"></div>
+        <div id="referencesShow"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
